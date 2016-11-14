@@ -37,7 +37,7 @@
         <h4 class="modal-title">Add Member</h4>
       </div>
       <div class="modal-body">
-        <%= form_for Member.new do |f| %>
+        <%= form_for @member, html: { multipart: true }  do |f| %>
           <div class="bold">
             Member Name
           </div>
